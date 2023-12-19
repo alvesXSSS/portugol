@@ -42,3 +42,40 @@ export function excluirSpaces (sub) {
     }
     return sub
 }
+
+//Excluir até achar uma palavra que tenha no area e venha antes que os outros itens em uma lista
+export function excluirUntilList (sub, lista) {
+   //referenciar o nome do item que vem antes de todos
+   let name = undefined
+   //Referenciar posição desse nome começando com 100 para qualquer item que já existir no sub entrar aí
+   let index = 100
+   //Fazer um for each entre ela
+   lista.forEach(e => {
+      //Procurar onde ele aparece
+      let aparecer = sub.indexOf(e)
+      if (aparecer != -1 && aparecer < index) {
+         name = e
+         index = aparecer
+      }
+   });
+   //Retornar um objeto do nome e da posição
+   return {
+      name: name,
+      posição: index
+   }
+}
+
+//Ele vai excluir caracteres de uma lista que você indicar
+export function excluirSpecialList(lista, regex) {
+   //Passar por todos os elementos da lista
+   for (let i = 0; i < lista.length; i++) {
+       lista[i] = excluirSpecialChar(lista[i], regex)
+   }
+   //Remover todos os elementos vazios
+   lista = lista.filter(elemento => elemento !== "")
+   return lista
+}
+
+export function excluirSpecialChar(string, regex) {
+   return string.replaceAll(regex, "")
+}
