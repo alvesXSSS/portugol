@@ -31,9 +31,10 @@ body * {
    display: none;
    left: 0;
    top: 0;
+   z-index: 3;
 }
 
-#area, #mexerNoConsole {
+#area {
     height: 200%;
     width: 90%;
     background: inherit;
@@ -59,10 +60,10 @@ body * {
 }
 
 
-#mostrar {
+#mostrar, #fechar {
     position: fixed;
     background-color: rgb(26, 25, 25);
-    box-shadow: 1px 1px 10px 1px black;
+    box-shadow: 1px 1px 10px 1px rgb(0, 0, 0);
     left: 85%;
     top: 90%;
     height: 5%;
@@ -72,30 +73,28 @@ body * {
     transition: 0.4s;
 }
 
-#mostrar:hover {
-    box-shadow: 1px 1px 10px 3px rgb(22, 22, 22);
-}
-
 #fechar {
-     background-color: transparent;
-     background: red;
-     font-size: 200%;
-     position: relative;
-     top: 10%;
-     left: 80%;
-     width: 10%;
-     color: white;
-     border-radius: 10%;
+    background-color: red;
+    box-shadow: 1px 1px 10px 1px rgb(255, 3, 3);
 }
 
-#manipularOConsole {
+#fechar:hover {
+    box-shadow: 1px 1px 10px 3px rgb(255, 3, 3);
+}
+
+#mostrar:hover {
+    box-shadow: 1px 1px 10px 3px rgb(32, 32, 32);
+}
+
+
+#guardar {
     width: 70%;
     margin-left: 3%;
     background-color: transparent;
     font-size: 130%;
     outline: none;
     color: white;
-    display: none;
+    display: block;
 }
 
 .linha {
@@ -125,4 +124,11 @@ body * {
 .destaque {
     text-shadow: 0 0 15px white;
     color: rgb(11, 214, 204);
+}
+
+#textoconsole {
+    margin-left: 3%;
+    font-size: 140%;
+    font-family: sans-serif, monospace;
+    margin-top: 1%;
 }

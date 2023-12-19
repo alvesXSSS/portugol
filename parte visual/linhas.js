@@ -3,6 +3,18 @@
 //Referenciar o text area de escrever código
 var area = document.getElementById('area')
 
+//Referenciar o botão de rodar o código
+var rodar = document.getElementById("rodar")
+
+//Referenciar o botão de fechar o console
+var fechar = document.getElementById("fechar")
+
+//Referenciar o console de mentirinha
+var manipular = document.getElementById("console")
+
+//Referenciar o texto do console
+var manipularText = document.getElementById("textoconsole")
+
 //Quando eu apertar em uma tecla, ele vai fazer algo
 area.addEventListener("input", () => {
     //Mostrar quantidade de elementos que possuem a classe linha

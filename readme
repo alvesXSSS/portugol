@@ -5,5 +5,3 @@ lógica. Além disso, criação de linha, destaque e duplicação de parentêsis
 assim como no vs code.
 
 Para usar o projeto só basta escrever no textarea o código e pôr ele para rodar.
-
-Nesse commit eu só fiz algumas coisas básicas baseadas na linha, então ele ainda não está lendo o código.
