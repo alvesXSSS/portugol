@@ -1,0 +1,9 @@
+O projeto de IDE dessa simplificação do portugol surgiu porque uma turma teve menos tempo para aprender
+a lógica de programação e o nosso instrutor criou uma simplificação dele, porém essa simplificação
+fazia com que fosse necessário corrigir no papel mesmo, o que não gera tanta motivação para aprender a 
+lógica. Além disso, criação de linha, destaque e duplicação de parentêsis, chaves... não seria possível
+assim como no vs code.
+
+Para usar o projeto só basta escrever no textarea o código e pôr ele para rodar.
+
+Nesse commit eu só fiz algumas coisas básicas baseadas na linha, então ele ainda não está lendo o código.
