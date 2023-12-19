@@ -58,10 +58,6 @@ body * {
    z-index: 1;
 }
 
-#mexerNoConsole {
-    width: 70%;
-    color: white;
-}
 
 #mostrar {
     position: fixed;
@@ -72,13 +68,15 @@ body * {
     height: 5%;
     width: 10%;
     border-radius: 10%;
+    z-index: 2;
+    transition: 0.4s;
 }
 
 #mostrar:hover {
-    box-shadow: 1px 1px 10px 4px black;
+    box-shadow: 1px 1px 10px 3px rgb(22, 22, 22);
 }
 
-#fecharconsole {
+#fechar {
      background-color: transparent;
      background: red;
      font-size: 200%;

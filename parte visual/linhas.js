@@ -1,7 +1,5 @@
 //Manipulação das linhas do projeto
 
-import {quantidadeQuebraLinha} from "./area.js";
-
 //Referenciar o text area de escrever código
 var area = document.getElementById('area')
 
@@ -10,7 +8,7 @@ area.addEventListener("input", () => {
     //Mostrar quantidade de elementos que possuem a classe linha
     let quantidade = document.getElementsByClassName("linha").length
     //Mostrar quantidade de quebras de linha que tem no textarea
-    let quebras = quantidadeQuebraLinha()
+    let quebras = area.value.split("\n").length
     //Se existir uma diferença entre quantidade de linha no textarea e no mostrador de linha
     let loop = 0
     while (quantidade != quebras && loop < 1000) {
@@ -77,3 +75,4 @@ function destacar () {
 //Quando eu clicar ou mexer com o text area chamará a função destacar
 area.addEventListener('click', destacar)
 area.addEventListener('input', destacar)
+area.addEventListener('keyup', destacar)
