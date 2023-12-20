@@ -1,17 +1,19 @@
 //Vai pegar o valor entre dois caracteres em uma substring
 export function valorEntre(sub, char1, char2) {
-     //Encontrar aparição depois do char1 
+     //Encontrar aparição depois do char1 e pular ela
      let primeiro = sub.indexOf(char1) + 1
      //Criar uma aparição para o char2
      let segundo;
      //Verificar se quer repetir o valor do char1
      if (char2 == undefined) {
         //Encontrar próxima aparição do char1
-        segundo = sub.lastIndexOf(char1)
+        segundo = sub.substring(primeiro, sub.length).indexOf(char1)
+        //Somar o segundo com o primeiro, pois o segundo é cortado no primeiro
+        segundo = parseInt(segundo) + parseInt(primeiro)
      }
      else {
         //Encontrar aparição do char2
-        segundo = sub.indexOf(char2)
+        segundo = sub.indexOf(char2) 
      }
      //Retornar o que tem entre esses termos
      return sub.substring(primeiro, segundo)

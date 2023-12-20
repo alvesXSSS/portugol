@@ -12,7 +12,7 @@ export var variaveis = []
 export var espelho = []
 
 //Mostrar um código para pessoa se basear nele
-area.value = 'Algoritmo "mostrar soma"; \nvar n1, n2; \nInício \n  Leia(n1);\nfimAlgoritmo'
+area.value = 'Algoritmo "mostrar soma"; \nvar n1, n2; \nInício \n  Escreva("Fale o primeiro número"); \n  Leia(n1);\n  Escreva("O primeiro número é: " + n1); \nfimAlgoritmo'
 
 rodar.addEventListener('click', () => {
     manipular.style.display = 'block'

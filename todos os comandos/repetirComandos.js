@@ -1,4 +1,5 @@
 import * as utilidades from "../interpretador/utilidades.js"
+import {escrever} from "./escreva.js"
 import {ler} from "./leia.js"
 
 export async function repetirComando() {
@@ -11,10 +12,10 @@ export async function repetirComando() {
     //remover possível loop
     let loop = 0
     //Enquanto não chegar ao fim do algoritmo vai continuar rodando
-    while (/fimalgoritmo/i.test(area.value.substring(0, 12)) == false && loop < 100) {
+    while (/fimalgoritmo/i.test(area.value.substring(0, 12)) == false && loop < 10) {
       loop++
       if (/escreva/i.test(area.value.substring(0, 7)) == true) {
-         console.log("escreva")
+         escrever()
       }
       else if (/leia/i.test(area.value.substring(0, 4)) == true) {
         await ler()
