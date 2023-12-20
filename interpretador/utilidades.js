@@ -36,7 +36,7 @@ export function excluirAfterChar(sub, char) {
 //Excluir espaços e quebras de linha
 export function excluirSpaces (sub) {
     //Enquanto o primeiro char for igual a espaço ou quebra de linha
-    while (sub[0] == " " || sub[0] == "\n") {
+    while (/[ \n]/.test(sub[0])) {
         //Remover primeiro char
         sub = sub.substring(1, sub.length)
     }
