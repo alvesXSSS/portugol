@@ -1,4 +1,5 @@
 import * as utilidades from "../interpretador/utilidades.js"
+import {ler} from "./leia.js"
 
 export async function repetirComando() {
     //Analisar onde termina o início, o +6 serve para pular a palavra também
@@ -16,7 +17,7 @@ export async function repetirComando() {
          console.log("escreva")
       }
       else if (/leia/i.test(area.value.substring(0, 4)) == true) {
-        console.log("leia")
+        await ler()
       }
       else if (/se\s*\(/i.test(area.value.substring(0, 7)) == true) {
          console.log("se ()")
@@ -24,5 +25,7 @@ export async function repetirComando() {
       else {
          console.log("atribuição")
       }
+      //Excluir espaços
+      area.value = utilidades.excluirSpaces(area.value)
     }
 }

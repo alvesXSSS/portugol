@@ -79,3 +79,22 @@ export function excluirSpecialList(lista, regex) {
 export function excluirSpecialChar(string, regex) {
    return string.replaceAll(regex, "")
 }
+
+import {espelho} from "./interpretar.js";
+import {variaveis} from "./interpretar.js";
+
+//Pegar variável que quiser
+export function getVariavel (name) {
+     //Pegar o nome da variável
+     let position = variaveis.indexOf(name)
+     //Pegar o que está escrito nessa posição
+     return espelho[position]
+}
+
+//Transcrever em uma variável
+export function postVariavel (name, valor) {
+    //Pegar o nome da variável
+    let position = variaveis.indexOf(name)
+    //Inserir valor nesse escopo
+    espelho[position] = valor
+}

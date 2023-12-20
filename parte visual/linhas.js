@@ -15,6 +15,9 @@ var manipular = document.getElementById("console")
 //Referenciar o texto do console
 var manipularText = document.getElementById("textoconsole")
 
+//Referenciar o lugar de guardar a variável do leia
+var guardar = document.getElementById("guardar")
+
 //Quando eu apertar em uma tecla, ele vai fazer algo
 area.addEventListener("input", () => {
     //Mostrar quantidade de elementos que possuem a classe linha
