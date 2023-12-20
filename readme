@@ -1,7 +1,12 @@
-O projeto de IDE dessa simplificação do portugol surgiu porque uma turma teve menos tempo para aprender
+O projeto de IDE dessa simplificação do portugol surgiu porque uma que participei turma teve menos tempo para aprender
 a lógica de programação e o nosso instrutor criou uma simplificação dele, porém essa simplificação
 fazia com que fosse necessário corrigir no papel mesmo, o que não gera tanta motivação para aprender a 
 lógica. Além disso, criação de linha, destaque e duplicação de parentêsis, chaves... não seria possível
 assim como no vs code.
 
-Para usar o projeto só basta escrever no textarea o código e pôr ele para rodar.
+1. Escrever o pseudo código no text area e colocar para ele rodar
+2. Não é necessário escrever var, apenas colocar o nome da variável antes do início e depois da
+nomeação do algoritmo e apertar o espaço ou enter para separar o nome de cada
+3. Usar apenas letras de A-Z quando for colocar o nome em uma variável
+4. Tenha cuidado quando for copiar pseudo código de outros lugares, pois a aspas pode ser diferente.
+Sempre usar essas: "

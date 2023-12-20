@@ -18,6 +18,8 @@ var manipularText = document.getElementById("textoconsole")
 //Referenciar o lugar de guardar a variável do leia
 var guardar = document.getElementById("guardar")
 
+area.focus()
+
 //Quando eu apertar em uma tecla, ele vai fazer algo
 area.addEventListener("input", () => {
     //Mostrar quantidade de elementos que possuem a classe linha

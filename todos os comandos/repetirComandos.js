@@ -1,4 +1,5 @@
 import * as utilidades from "../interpretador/utilidades.js"
+import {atribuir} from "./atribuir.js"
 import {escrever} from "./escreva.js"
 import {ler} from "./leia.js"
 
@@ -24,7 +25,7 @@ export async function repetirComando() {
          console.log("se ()")
       }
       else {
-         console.log("atribuição")
+         atribuir()
       }
       //Excluir espaços
       area.value = utilidades.excluirSpaces(area.value)
